@@ -59,7 +59,7 @@ int speedRT;  // speedRT = Xbox.getButtonPress(RT)/4
 /*
 //Wheels line follower
 void forward(){
-     speedL();
+     speedL();             
      digitalWrite(R_AN1, LOW);
      digitalWrite(R_CL2, HIGH); 
      digitalWrite(L_AN3, LOW);
@@ -128,14 +128,14 @@ void stop(){
   digitalWrite(r2d,HIGH);
   }
 
-void forward(){
+void forward(){               //  diagonally forward on left
   digitalWrite(r1d,HIGH);
   digitalWrite(l2d,HIGH);
   digitalWrite(l1d,HIGH);
   digitalWrite(r2d,HIGH);
 }
 
-void right(){
+void right(){                // slight right turn
   
   digitalWrite(r1d,HIGH);
   digitalWrite(l2d,HIGH);
@@ -143,7 +143,7 @@ void right(){
   digitalWrite(r2d,LOW);
   }
 
-void left(){
+void left(){                 // slight left turn
  
   digitalWrite(r1d,LOW);
   digitalWrite(l2d,LOW);
@@ -151,7 +151,7 @@ void left(){
   digitalWrite(r2d,HIGH);
 }
 
-void backward(){
+void backward(){            // diagonally forward on left
 
   digitalWrite(r1d,LOW);
   digitalWrite(l2d,LOW);
